@@ -1,0 +1,40 @@
+body{
+  font-family: 'Alata', sans-serif;
+  /* background: rgb(129, 56, 90); */
+  text-align: center;
+  font-size: 25px;
+  /* background-image: url('https://sm.mashable.com/mashable_me/photo/default/giphy_3gf5.gif'); */
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+  margin:0;
+  color: black
+}
+section{
+  background-color: green;
+  border: 1px solid black
+}
+ ul li{
+   text-decoration: none;
+   list-style-type: none;
+ }
+h3{
+  margin:0;
+  margin-top: .5em;
+  font-size: 35px;
+}
+h1{
+  margin:0;
+  font-size: 45px;
+}
+button{
+  color: white;
+  background-color: black;
+  width: 8%;
+  height: 3em;
+}
+
+input{
+  width: 15%;
+  height: 2.8em;
+}

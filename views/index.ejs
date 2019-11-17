@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorie Tracker</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <h1>Calorie Tracker</h1>
+  </section>
+  <h3>Today's Meal Plan</h3>
+  <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <li class="message">
+      <span><%= messages[i].food %></span>
+      <span id="calories"><%= messages[i].calories %></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/messages" method="POST">
+    <input type="text" placeholder="food" name="food">
+    <input type="text" placeholder="calories" name="calories">
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- <h3 class="result">Calorie Total:
+    <span id="total"></span>
+  </h3> -->
+
+  <script src="main.js"></script>
+
+</body>
+</html>
